@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+    <link rel="stylesheet" href="chatagpt.css">
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+    <title>Enter Details</title>
+</head>
+<body>
+    <h1 class="heading" align = center>CGPA Calculator</h1>
+    <p id="para">Student Name : <span id="um"></span></p>
+    <script>
+        var v1 = window.localStorage.getItem("uname");
+        document.getElementById("um").innerHTML = v1;
+    </script>
+    Subject 1 :<input id="i1" type="text" placeholder="Enter name of subject 1">
+    <label for="Grade1">Select Grade of Subject 1:</label>
+    <select name="grade1" id="g1">
+        <option value=10>A+</option>
+        <option value=9>A</option>
+        <option value=6>C+</option>
+        <option value=7>B</option>
+        <option value=8>B+</option>
+    </select>
+    <label for="credit1">Select Credit for Subject 1:</label>
+    <select name="c1" id="cr1">
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+        <option value="0">0</option>
+    </select>
+    <br />
+    Subject 2 :<input id="i2" type="text" placeholder="Enter name of subject 2">
+    <label for="Grade2">Select Grade of Subject 2:</label>
+    <select name="grade2" id="g2">
+        <option value=10>A+</option>
+        <option value=9>A</option>
+        <option value=6>C+</option>
+        <option value=7>B</option>
+        <option value=8>B+</option>
+    </select>
+    <label for="credit2">Select Credit for Subject 2:</label>
+    <select name="c2" id="cr2">
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+        <option value="0">0</option>
+    </select>
+    <br />
+    Subject 3 :<input id="i3" type="text" placeholder="Enter name of subject 3">
+    <label for="Grade3">Select Grade of Subject 3:</label>
+    <select name="grade3" id="g3">
+        <option value=10>A+</option>
+        <option value=9>A</option>
+        <option value=6>C+</option>
+        <option value=7>B</option>
+        <option value=8>B+</option>
+    </select>
+    <label for="credit3">Select Credit for Subject 3:</label>
+    <select name="c3" id="cr3">
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+        <option value="0">0</option>
+    </select>
+    <br />
+    Subject 4 :<input id="i4" type="text" placeholder="Enter name of subject 4">
+    <label for="Grade4">Select Grade of Subject 4:</label>
+    <select name="grade4" id="g4">
+        <option value=10>A+</option>
+        <option value=9>A</option>
+        <option value=6>C+</option>
+        <option value=7>B</option>
+        <option value=8>B+</option>
+    </select>
+    <label for="credit4">Select Credit for Subject 4:</label>
+    <select name="c4" id="cr4">
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+        <option value="0">0</option>
+    </select>
+    <br />
+    Subject 5 :<input id="i5" type="text" placeholder="Enter name of subject 5">
+    <label for="Grade5">Select Grade of Subject 5:</label>
+    <select name="grade5" id="g5">
+        <option value=10>A+</option>
+        <option value=9>A</option>
+        <option value=6>C+</option>
+        <option value=7>B</option>
+        <option value=8>B+</option>
+    </select>
+    <label for="credit6">Select Credit for Subject 5:</label>
+    <select name="c5" id="cr5">
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+        <option value="0">0</option>
+    </select>
+    <br />
+    Subject 6 :<input id="i6" type="text" placeholder="Enter name of subject 6">
+    <label for="Grade6">Select Grade of Subject 6:</label>
+    <select name="grade6" id="g6">
+        <option value=10>A+</option>
+        <option value=9>A</option>
+        <option value=6>C+</option>
+        <option value=7>B</option>
+        <option value=8>B+</option>
+    </select>
+    <label for="credit6">Select Credit for Subject 6:</label>
+    <select name="c6" id="cr6">
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+        <option value="0">0</option>
+    </select>
+    <br />
+    <p id="demo">To be submitted</p>
+    <center>
+        <button type="button" class="btn btn-primary" onclick="cgpacalc()">SUBMIT</button>
+    </center>
+
+    <p id="s1">Subject 1 Grade : </p>
+    <p id="s2">Subject 2 Grade : </p>
+    <p id="s3">Subject 3 Grade : </p>
+    <p id="s4">Subject 4 Grade : </p>
+    <p id="s5">Subject 5 Grade : </p>
+    <p id="s6">Subject 6 Grade: </p>
+    <center>
+        <p id="CGPA">Calculated CGPA : </p>
+    </center>
+</body>
+</html>
+
